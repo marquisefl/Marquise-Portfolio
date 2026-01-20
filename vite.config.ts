@@ -8,7 +8,8 @@ export default defineConfig(({ mode }) => {
       base: '/Marquise-Portfolio/',
       server: {
         port: 3000,
-        host: '0.0.0.0',
+        host: true,
+        allowedHosts: ['.manus.computer', 'localhost'],
       },
       plugins: [react()],
       define: {
