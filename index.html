@@ -200,6 +200,54 @@
         .pulse-glow {
             animation: pulse-glow 2s ease-in-out infinite;
         }
+        
+        /* Hero text hover effects */
+        .hero-word {
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero-word:hover {
+            transform: scale(1.1) translateY(-5px);
+            text-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+            filter: brightness(1.3);
+        }
+        
+        .hero-word-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+        
+        .hero-word-gradient:hover {
+            animation: gradient-shift 0.5s ease infinite, glitch-text 0.3s ease-in-out;
+            background-size: 300% 300%;
+        }
+        
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        @keyframes glitch-text {
+            0%, 100% {
+                transform: scale(1.1) translateY(-5px);
+            }
+            25% {
+                transform: scale(1.12) translateY(-5px) translateX(2px);
+            }
+            75% {
+                transform: scale(1.12) translateY(-5px) translateX(-2px);
+            }
+        }
     </style>
 
 <script type="importmap">
@@ -214,7 +262,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/Marquise-Portfolio/assets/index-Jjn9fnWF.js"></script>
+  <script type="module" crossorigin src="/Marquise-Portfolio/assets/index-8BNfw77o.js"></script>
 </head>
 <body>
     <div class="noise"></div>
