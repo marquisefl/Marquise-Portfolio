@@ -13,8 +13,11 @@
             --text-color: #f2f2f2;
         }
         
-        * {
-            cursor: none !important;
+        /* Custom cursor only on desktop */
+        @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+            * {
+                cursor: none !important;
+            }
         }
         
         body {
@@ -44,22 +47,29 @@
             background-image: url("https://grainy-gradients.vercel.app/noise.svg");
         }
         
-        /* Project hover effects */
+        /* Project hover effects - desktop only */
         .reveal-img {
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             transform: translateY(20px) scale(0.95);
             opacity: 0;
         }
-        .project-row:hover .reveal-img {
-            transform: translateY(0) scale(1);
-            opacity: 1;
+        
+        @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+            .project-row:hover .reveal-img {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
         }
+        
         .line-growth {
             width: 0%;
             transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .project-row:hover .line-growth {
-            width: 100%;
+        
+        @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+            .project-row:hover .line-growth {
+                width: 100%;
+            }
         }
         
         /* Selection */
@@ -110,7 +120,7 @@
             transform-origin: 70% 70%;
         }
 
-        /* Glitch Animation */
+        /* Glitch Animation - desktop only */
         @keyframes glitch {
           0% { clip-path: inset(40% 0 61% 0); transform: translate(-20px, -10px); }
           20% { clip-path: inset(92% 0 1% 0); transform: translate(20px, 10px); }
@@ -125,36 +135,38 @@
           overflow: hidden;
         }
 
-        .glitch-image:hover::before,
-        .glitch-image:hover::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: inherit;
-          background-size: cover;
-          background-position: center;
-          opacity: 0.8;
-        }
+        @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+            .glitch-image:hover::before,
+            .glitch-image:hover::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: inherit;
+              background-size: cover;
+              background-position: center;
+              opacity: 0.8;
+            }
 
-        .glitch-image:hover::before {
-          left: 2px;
-          text-shadow: -2px 0 #ff00c1;
-          clip: rect(44px, 450px, 56px, 0);
-          animation: glitch 5s infinite linear alternate-reverse;
-          background-color: rgba(255, 0, 193, 0.1);
-          background-blend-mode: hard-light;
-        }
+            .glitch-image:hover::before {
+              left: 2px;
+              text-shadow: -2px 0 #ff00c1;
+              clip: rect(44px, 450px, 56px, 0);
+              animation: glitch 5s infinite linear alternate-reverse;
+              background-color: rgba(255, 0, 193, 0.1);
+              background-blend-mode: hard-light;
+            }
 
-        .glitch-image:hover::after {
-          left: -2px;
-          text-shadow: -2px 0 #00fff9;
-          clip: rect(44px, 450px, 56px, 0);
-          animation: glitch 5s infinite linear alternate;
-          background-color: rgba(0, 255, 249, 0.1);
-          background-blend-mode: hard-light;
+            .glitch-image:hover::after {
+              left: -2px;
+              text-shadow: -2px 0 #00fff9;
+              clip: rect(44px, 450px, 56px, 0);
+              animation: glitch 5s infinite linear alternate;
+              background-color: rgba(0, 255, 249, 0.1);
+              background-blend-mode: hard-light;
+            }
         }
         
         /* Smooth scrolling */
@@ -170,13 +182,16 @@
             background-clip: text;
         }
         
-        /* Hover lift effect */
+        /* Hover lift effect - desktop only */
         .hover-lift {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .hover-lift:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        
+        @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+            .hover-lift:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            }
         }
         
         /* Text reveal animation */
@@ -225,6 +240,62 @@
                 background-position: 0% 50%;
             }
         }
+        
+        /* Mobile-specific styles */
+        @media (max-width: 767px) {
+            /* Reduce animation intensity on mobile for performance */
+            .animate-spin-slow {
+                animation-duration: 30s;
+            }
+            
+            /* Ensure text is readable on small screens */
+            .text-[12vw] {
+                font-size: clamp(2.5rem, 12vw, 6rem);
+            }
+            
+            /* Better touch targets */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            /* Reduce parallax effects on mobile */
+            .parallax {
+                transform: none !important;
+            }
+            
+            /* Ensure images don't overflow */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* Better spacing for mobile */
+            section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            /* Reduce marquee speed on mobile */
+            .animate-marquee-left,
+            .animate-marquee-right {
+                animation-duration: 30s;
+            }
+        }
+        
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            /* Remove hover states that don't work on touch */
+            .group:hover .group-hover\:italic {
+                font-style: normal;
+            }
+            
+            /* Ensure buttons have visible active states */
+            button:active,
+            a:active {
+                opacity: 0.7;
+            }
+        }
     </style>
 
 <script type="importmap">
@@ -239,7 +310,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/Marquise-Portfolio/assets/index-8BNfw77o.js"></script>
+  <script type="module" crossorigin src="/Marquise-Portfolio/assets/index-CxZY0eDo.js"></script>
 </head>
 <body>
     <div class="noise"></div>
