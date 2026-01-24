@@ -9,8 +9,8 @@ export const PROJECTS: Project[] = [
     subtitle: 'Becoming one of America\'s most trusted medical brand',
     category: 'Healthcare Design',
     description: 'Becoming one of America\'s most trusted medical brand.',
-    imageUrl: `${BASE_PATH}images/kaiser_permanente_project.png`,
-    heroImage: `${BASE_PATH}images/kaiser_01_hero.webp`,
+    imageUrl: `${BASE_PATH}images/kaiser_project.png`,
+    heroImage: `${BASE_PATH}images/kaiser_01_hero.png`,
     tags: ['Healthcare', 'Personalization', 'Mobile UI'],
     client: 'Kaiser Permanente',
     services: 'User Experience and Interface Design',
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_03_doctor.webp`,
+        src: `${BASE_PATH}images/kaiser_03_doctor.png`,
         alt: 'Doctor with child patient'
       },
       {
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_04_ui_screens.webp`,
+        src: `${BASE_PATH}images/kaiser_04_ui_screens.png`,
         alt: 'Kaiser UI screens showing doctor profile and health articles'
       },
       {
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_05_website.webp`,
+        src: `${BASE_PATH}images/kaiser_05_website.png`,
         alt: 'Kaiser Permanente website design'
       },
       {
@@ -81,7 +81,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_06_articles.webp`,
+        src: `${BASE_PATH}images/kaiser_06_articles.png`,
         alt: 'Kaiser Latest articles UI mockup'
       },
       {
@@ -91,17 +91,17 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_07_tasks.webp`,
+        src: `${BASE_PATH}images/kaiser_07_tasks.png`,
         alt: 'Kaiser task dashboard'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_08_dashboard.webp`,
+        src: `${BASE_PATH}images/kaiser_02_group.png`,
         alt: 'Kaiser dashboard showing Care Team, Pharmacy, Membership ID'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/kaiser_09_health.webp`,
+        src: `${BASE_PATH}images/kaiser_project.png`,
         alt: 'Kaiser Your health Our cause section'
       },
       {
@@ -123,8 +123,8 @@ export const PROJECTS: Project[] = [
     subtitle: 'Rethink how the Twitter community interacts with Twitter Health',
     category: 'Social Media Safety',
     description: 'Rethink how the Twitter community interacts with Twitter Health and how it supports them.',
-    imageUrl: `${BASE_PATH}images/twitter_health_project.jpg`,
-    heroImage: `${BASE_PATH}images/twitter_01_hero.webp`,
+    imageUrl: `${BASE_PATH}images/twitter_project.png`,
+    heroImage: `${BASE_PATH}images/twitter_01_hero.png`,
     tags: ['Social Media', 'Brand Identity', 'UX Strategy'],
     client: 'Twitter',
     services: 'User Experience and Interface Design',
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_02_fastcompany.webp`,
+        src: `${BASE_PATH}images/twitter_02_fastcompany.png`,
         alt: 'Fast Company article about Twitter Health'
       },
       {
@@ -158,7 +158,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_03_user.webp`,
+        src: `${BASE_PATH}images/twitter_03_user.png`,
         alt: 'Twitter user at computer'
       },
       {
@@ -188,7 +188,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_04_culture.webp`,
+        src: `${BASE_PATH}images/twitter_04_culture.png`,
         alt: 'Creating Culture'
       },
       {
@@ -203,12 +203,12 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_05_personas.webp`,
+        src: `${BASE_PATH}images/twitter_05_personas.png`,
         alt: 'User Personas'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_06_personas2.webp`,
+        src: `${BASE_PATH}images/twitter_06_personas2.png`,
         alt: 'User Personas continued'
       },
       {
@@ -219,27 +219,27 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_07_mobile_ui.webp`,
+        src: `${BASE_PATH}images/twitter_07_mobile_ui.png`,
         alt: 'Twitter mobile UI'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_08_supportive.webp`,
+        src: `${BASE_PATH}images/twitter_08_reporting.png`,
         alt: 'Supportive section'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_09_fair.webp`,
+        src: `${BASE_PATH}images/twitter_09_fair.png`,
         alt: 'Fair section'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_10_strength.webp`,
+        src: `${BASE_PATH}images/twitter_10_strength.png`,
         alt: 'Strength in Numbers'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/twitter_11_bold.webp`,
+        src: `${BASE_PATH}images/twitter_11_bold.png`,
         alt: 'Bold section'
       },
       {
@@ -261,8 +261,8 @@ export const PROJECTS: Project[] = [
     subtitle: 'Delivering tailored financial solutions for non-prime users',
     category: 'Fintech',
     description: 'Delivering tailored financial solutions for non-prime users.',
-    imageUrl: `${BASE_PATH}images/elevate_project.jpg`,
-    heroImage: `${BASE_PATH}images/elevate_01_hero.webp`,
+    imageUrl: `${BASE_PATH}images/elevate_project.png`,
+    heroImage: `${BASE_PATH}images/elevate_01_hero.jpg`,
     tags: ['Fintech', 'Mobile', 'Financial Wellness'],
     client: 'Elevate',
     services: 'Visual Design, UI & UX Design',
@@ -278,7 +278,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_02_userflow.webp`,
+        src: `${BASE_PATH}images/elevate_02_userflow.png`,
         alt: 'Elevate user flow diagrams'
       },
       {
@@ -302,7 +302,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_03_journey.webp`,
+        src: `${BASE_PATH}images/elevate_03_journey.png`,
         alt: 'Elevate user journey diagram'
       },
       {
@@ -311,7 +311,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_04_signup.webp`,
+        src: `${BASE_PATH}images/elevate_04_signup.png`,
         alt: 'Elevate sign up flow mobile screens'
       },
       {
@@ -333,7 +333,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_05_plans.webp`,
+        src: `${BASE_PATH}images/elevate_05_plans.png`,
         alt: 'Elevate financial plans UI'
       },
       {
@@ -344,12 +344,12 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_06_debt.webp`,
+        src: `${BASE_PATH}images/elevate_06_debt.png`,
         alt: 'Elevate tackle your debt UI screens'
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_07_dashboard.webp`,
+        src: `${BASE_PATH}images/elevate_07_dashboard.png`,
         alt: 'Elevate dashboard and mobile screens'
       },
       {
@@ -360,7 +360,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/elevate_08_payoff.webp`,
+        src: `${BASE_PATH}images/elevate_08_communication.png`,
         alt: 'Elevate payoff tracking dashboard'
       },
       {
@@ -382,8 +382,8 @@ export const PROJECTS: Project[] = [
     subtitle: 'Reimagined the athletic shopping experience',
     category: 'E-commerce',
     description: 'Reimagined the athletic shopping experience with bold, dynamic, and competitive design solutions.',
-    imageUrl: `${BASE_PATH}images/under_armour_project.jpg`,
-    heroImage: `${BASE_PATH}images/ua_01_hero.webp`,
+    imageUrl: `${BASE_PATH}images/ua_project.png`,
+    heroImage: `${BASE_PATH}images/ua_01_hero.png`,
     tags: ['E-commerce', 'Retail', 'Mobile'],
     client: 'Under Armour',
     services: 'Visual Design, UI & UX Design',
@@ -429,7 +429,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/ua_02_shoes.webp`,
+        src: `${BASE_PATH}images/ua_02_shoes.png`,
         alt: 'Under Armour Project Rock shoes product card'
       },
       {
@@ -441,7 +441,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/ua_03_figma.webp`,
+        src: `${BASE_PATH}images/ua_03_figma.png`,
         alt: 'Under Armour Figma design system'
       },
       {
@@ -452,7 +452,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/ua_04_products.webp`,
+        src: `${BASE_PATH}images/ua_01_hero.png`,
         alt: 'Under Armour product grid'
       },
       {
@@ -464,7 +464,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/ua_05_mobile.webp`,
+        src: `${BASE_PATH}images/ua_02_shoes.png`,
         alt: 'Under Armour mobile screens'
       },
       {
@@ -476,7 +476,7 @@ export const PROJECTS: Project[] = [
       },
       {
         type: 'image',
-        src: `${BASE_PATH}images/ua_06_phones.webp`,
+        src: `${BASE_PATH}images/ua_03_figma.png`,
         alt: 'Under Armour mobile phone mockups'
       },
       {
